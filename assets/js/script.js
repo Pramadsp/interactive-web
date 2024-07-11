@@ -20,3 +20,11 @@ function answer(currentTabIndex, value = null) {
         console.log('Collected answers:', answers);
     }
 }
+
+function share() {
+    const imageUrl = document.getElementById('image-to-share').src;
+    const message = `Check out this image: ${imageUrl}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, '_blank');
+}
