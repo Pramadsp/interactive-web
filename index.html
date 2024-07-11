@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Resume</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+</head>
+<body class="nes-text bg-gray-100 flex items-center justify-center h-screen overflow-hidden">
+    <div class="container mx-auto p-4">
+        <div id="landing-page" class="shadow-lg p-6 max-w-screen-sm mx-auto h-screen" style="background-image: url('assets/images/landing-background.webp'); background-size: cover;">
+            <div id="tabindex-0" class="block">
+                <div class="flex items-center justify-center mt-20">
+                    <img src="assets/images/landing-title.webp" style="width: 70%;"/>
+                </div>
+                <div class="flex items-center justify-center mt-20">
+                    <button type="button" class="nes-btn is-warning" style="width: 200px;" onclick="answer(0)">Click Me !</button>
+                </div>
+            </div>
+
+            <div id="tabindex-1" class="hidden">
+                <div class="flex items-center justify-center mt-20">
+                    <img src="assets/images/question1.webp" style="width: 70%;"/>
+                </div>
+                <div class="flex items-center justify-center mt-20">
+                    <p>
+                        What's your favorite color?
+                    </p>
+                </div>
+                <div class="flex items-center justify-center mt-14">
+                    <button type="button" class="nes-btn is-error" style="width: 200px;" data-value="Red" onclick="answer(1, 'Red')">Red</button>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="button" class="nes-btn is-primary" style="width: 200px;" data-value="Blue" onclick="answer(1, 'Blue')">Blue</button>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="button" class="nes-btn is-warning" style="width: 200px;" data-value="Yellow" onclick="answer(1, 'Yellow')">Yellow</button>
+                </div>
+            </div>
+
+            <div id="tabindex-2" class="hidden">
+                <div class="flex items-center justify-center mt-20">
+                    <img src="assets/images/question2.webp" style="width: 70%;"/>
+                </div>
+                <div class="flex items-center justify-center mt-20">
+                    <p>
+                        What's your favorite activity?
+                    </p>
+                </div>
+                <div class="flex items-center justify-center mt-14">
+                    <button type="button" class="nes-btn is-error" style="width: 200px;" data-value="Reading" onclick="answer(2, 'Reading')">Reading</button>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="button" class="nes-btn is-primary" style="width: 200px;" data-value="Sports" onclick="answer(2, 'Sports')">Sports</button>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="button" class="nes-btn is-warning" style="width: 200px;" data-value="Cooking" onclick="answer(2, 'Cooking')">Cooking</button>
+                </div>
+            </div>
+
+            <div id="tabindex-3" class="hidden">
+                <div class="flex items-center justify-center mt-20">
+                    <img src="assets/images/question3.webp" style="width: 70%;"/>
+                </div>
+                <div class="flex items-center justify-center mt-20">
+                    <p>
+                        Choose a vacation destination
+                    </p>
+                </div>
+                <div class="flex items-center justify-center mt-14">
+                    <button type="button" class="nes-btn is-error" style="width: 200px;" data-value="Beach" onclick="answer(3, 'Beach')">Beach</button>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="button" class="nes-btn is-primary" style="width: 200px;" data-value="Mountains" onclick="answer(3, 'Mountains')">Mountains</button>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="button" class="nes-btn is-warning" style="width: 200px;" data-value="City" onclick="answer(3, 'City')">City</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tabindex-4" class="hidden shadow-lg p-6 max-w-screen-sm mx-auto h-screen" style="background-image: url('assets/images/kuelapis.webp'); background-size: cover;">
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
